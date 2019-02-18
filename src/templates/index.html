@@ -48,6 +48,10 @@
         <div class="candidate">
           <div class="candidate-photo"></div>
           <div class="candidate-name">{{ candidate.Candidate }}</div>
+          <button class="collapsible">Who?</button>
+            <div class="content">
+              <p>????{{ candidate.Bio }}</p>
+            </div>
         </div>
         {% endfor %}
         </div>
