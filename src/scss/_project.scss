@@ -86,3 +86,13 @@ tab button {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+
+.candidate-info {
+&.active {
+display:block;
+}
+&.hidden {
+display: none;
+}
+} 
