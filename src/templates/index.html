@@ -50,32 +50,32 @@
           <div class="candidate-name">{{ candidate.Candidate }}</div>
           <button class="collapsible">Who?</button>
             <div class="content">
-                
+
 
                 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+      <button class="tablinks" data-id="london">London</button>
+      <button class="tablinks" data-id="paris">Paris</button>
+      <button class="tablinks" data-id="tokyo">Tokyo</button>
 </div>
 
-<div id="London" class="tabcontent">
+<div id="london" class="tabcontent">
   <h3>London</h3>
   <p>London is the capital city of England.</p>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="paris" class="tabcontent">
   <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+  <p>Paris is the capital of France.</p>
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="tokyo" class="tabcontent">
   <h3>Tokyo</h3>
   <p>Tokyo is the capital of Japan.</p>
 </div>
 
 
 
-              
+
             </div>
         </div>
         {% endfor %}

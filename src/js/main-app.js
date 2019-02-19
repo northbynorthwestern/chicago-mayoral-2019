@@ -30,13 +30,13 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = null;
     } else {
       content.style.maxHeight = content.scrollHeight + "px";
-    } 
+    }
   });
 }
 
-
-function openCity(evt, cityName) {
+$(".tablinks").click(function() {
   var i, tabcontent, tablinks;
+  var cityName = $(this).attr("data-id");
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -46,6 +46,5 @@ function openCity(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
+  $(this).className += " active";
+});
