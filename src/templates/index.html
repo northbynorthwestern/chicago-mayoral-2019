@@ -48,7 +48,7 @@
         <div class="candidate">
           <div class="candidate-photo"></div>
           <div class="candidate-name">{{ candidate.Candidate }}</div>
-          <button class="collapsible {{ candidate.ID }}">Who?</button>
+          <button class="collapsible chico">Who?</button>
             <div class="content">
 
 
@@ -58,47 +58,23 @@
       <button class="tablinks" data-id="tokyo">Tokyo</button>
 </div>
 
-          <div class="candidate-info">
+<div id="london" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
 
-                <div class="candidate-bio">
-         
-                  <p> {{ candidate.BioA }} </p>
-                  <p> {{ candidate.BioB }} </p>
-                  <p> {{ candidate.BioC }} </p>
-          
-                </div>
-                  
-                <div class="candidate-issues">
+<div id="paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
 
-                  <p><b>{{ candidate.Issue1Title }}</b></p>
-                  <p>{{ candidate.Issue1Blurb }}</p>
+<div id="tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
 
-                  <p><b>{{ candidate.Issue2Title }}</b></p>
-                  <p>{{ candidate.Issue2Blurb }}</p>
 
-                  <p><b>{{ candidate.Issue3Title }}</b></p>
-                  <p>{{ candidate.Issue3Blurb }}</p>
 
-                  <p><b>{{ candidate.Issue4Title }}</b></p>
-                  <p>{{ candidate.Issue4Blurb }}</p>
-
-                </div>
-
-                <div class="candidate-endorsements">
-
-                  <p><b>Major Endorsements</b></p>
-                  <p>{{ candidate.Endorsements }}</p>
-             
-                </div>
-
-                <div class="candidate-chancesofwinning">
-
-                  <p><b>{{ candidate.ChancesofWinningTitle }}</b></p>
-                  <p>{{ candidate.ChancesofWinningBlurb }}</p>
-             
-                </div>
-
-          </div>
 
             </div>
         </div>
