@@ -46,7 +46,9 @@
         <div class="candidates-container">
         {% for candidate in DATA.Sheet1 %}
         <div class="candidate">
-          <div class="candidate-photo"></div>
+          <div class="candidate-photo"> 
+            <div class="candidate-img {{candidate.ID}}"> </div> 
+          </div>
           <div class="candidate-name">{{ candidate.Candidate }}</div>
           <button class="collapsible" data-id="{{candidate.ID}}">Who?</button>
             <div class="content {{candidate.ID}}">

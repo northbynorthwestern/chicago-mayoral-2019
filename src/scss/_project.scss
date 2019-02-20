@@ -17,12 +17,195 @@
   border-radius: 50%;
   height: 100px;
   width: 100px;
-  background-image: url("https://i.guim.co.uk/img/media/823b3bd884fcc0432513b9422fa5d71def0b46de/0_20_502_301/master/502.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=9e2e22c92842a6d9920462ee836cf882");
+
+.candidate-img{
+  &.chico {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://www.cityclub-chicago.org/content/images/cms/gery_chico_headshot_crop.jpg/image-full;max$194,0.ImageHandler");
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
   border: 2px solid blue;
+  }
+  &.daley {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://www.aclu-il.org/sites/default/files/styles/content_area_full_width/public/wysiwyg/daley_-_headshot-01.png?itok=q_yickFb");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.enyia {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://suntimesmedia.files.wordpress.com/2018/10/chicago_mayor_79408306-e1539725993698.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.fioretti {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://suntimesmedia.files.wordpress.com/2018/11/2018candidates-807-e1542405452588.jpg?w=400&h=300");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.ford {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://chicagocrusader.com/wp-content/uploads/sites/2/2018/09/LASHAWN-K.-FORD.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.joyce {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://suntimesmedia.files.wordpress.com/2018/12/Jerry-Joyce.jpg?w=561&h=373&crop=1");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.kozlar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://pbs.twimg.com/profile_images/1080523353679642624/YcY5VOyW_400x400.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.lightfoot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://lightfootforchicago.com/wp-content/uploads/2018/05/LL-about-hero2.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.mccarthy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://www.cityclub-chicago.org/content/images/cms/garry_mccarthy_headshot_crop.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.mendoza {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://www.cityclub-chicago.org/content/images/cms/susana_mendoza_headshot_2019_crop.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.preckwinkle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://media1.fdncms.com/chicago/imager/u/original/67156472/tonipreckwinkle-official-headshot_2.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.salesgriffin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://www.nealsalesgriffin.com/images/neal-hero.jpg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.vallas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://s3-prod.chicagobusiness.com/s3fs-public/ISSUE05-180509894-AR.jpeg");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+  &.wilson {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-image: url("https://www.ebony.com/wp-content/uploads/2018/10/Willie-Wilson.png");
+  background-position: center;
+  background-size:auto 100%;
+  background-repeat: no-repeat;
+  border: 2px solid blue;
+  }
+
 }
+}
+
+
 
 .collapsible {
   background-color: #ADF2FA;
