@@ -14,6 +14,9 @@ window.$('.bt-icon--twitter').click((e) => {
   window.open(`https://twitter.com/intent/tweet?text=${status}`);
 });
 
+
+
+var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
@@ -34,20 +37,6 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
 
   // get second class name (candidate's id) and save as variable
   // display the corresponding candidate-info div

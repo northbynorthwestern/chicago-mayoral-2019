@@ -7,9 +7,9 @@
   .candidate {
     display: inline-block;
     margin: 30px;
-
   }
 }
+
 .candidate-photo {
   display: block;
   margin-left: auto;
@@ -22,7 +22,6 @@
   background-size:auto 100%;
   background-repeat: no-repeat;
   border: 2px solid blue;
-
 }
 
 .collapsible {
@@ -44,7 +43,7 @@
 .content {
   padding: 0 18px;
   display: none;
-  overflow: hidden;
+  overflow: visible;
   background-color: #f1f1f1;
   max-height: 0;
   transition: max-height 0.2s ease-out;
@@ -53,7 +52,7 @@
 
 
 .tab {
-  overflow: hidden;
+  overflow: visible;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }

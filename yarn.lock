@@ -2075,6 +2075,7 @@ copy-descriptor@^0.1.0:
 copytext@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/copytext/-/copytext-2.1.0.tgz#9d53b012c281517c538ccff530ada6a5e5c6c1fd"
+  integrity sha1-nVOwEsKBUXxTjM/1MK2mpeXGwf0=
   dependencies:
     xlsx "^0.8.0"
 

@@ -51,15 +51,27 @@
           <button class="collapsible">Who?</button>
             <div class="content">
 
-                
-            <div class="candidate-info">
-               <div class="candidate-bio">
+                <div class="tab">
+                   <button class="tablinks" data-id="bio">Bio</button>
+                    <button class="tablinks" data-id="issues">Issues</button>
+                    <button class="tablinks" data-id="endorsements">Endorsements</button>
+                    <button class="tablinks" data-id="chancesofwinning">Chances of Winning</button>
+                </div>
+
+            <div class="candidate-info">  
+
+                <div id="bio" class="tabcontent">
+  
+                  <div class="candidate-bio">
          
                   <p> {{ candidate.BioA }} </p>
                   <p> {{ candidate.BioB }} </p>
                   <p> {{ candidate.BioC }} </p>
           
+                  </div>
                 </div>
+
+              <div id="issues" class="tabcontent">                        
                   
                 <div class="candidate-issues">
 
@@ -76,13 +88,19 @@
                   <p>{{ candidate.Issue4Blurb }}</p>
 
                 </div>
+              </div>
 
+              <div id="endorsements" class="tabcontent">                        
+                  
                 <div class="candidate-endorsements">
 
                   <p><b>Major Endorsements</b></p>
                   <p>{{ candidate.Endorsements }}</p>
              
                 </div>
+              </div>
+
+              <div id="chancesofwinning" class="tabcontent">
 
                 <div class="candidate-chancesofwinning">
 
@@ -90,6 +108,10 @@
                   <p>{{ candidate.ChancesofWinningBlurb }}</p>
              
                 </div>
+              </div>
+
+
+            <p></p>
             </div>
 
 
