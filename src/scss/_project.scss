@@ -41,11 +41,12 @@
 }
 
 .content {
+  width: 450px;
   padding: 0 18px;
   display: none;
   overflow: visible;
   background-color: #f1f1f1;
-  max-height: 0;
+  max-height: 800px;
   transition: max-height 0.2s ease-out;
   text-align: left;
   &.active {
@@ -83,8 +84,10 @@ tab button {
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+  display: block;
+  height: 400px;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+  overflow: scroll;
 }
