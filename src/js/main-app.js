@@ -41,6 +41,7 @@ for (i = 0; i < coll.length; i++) {
   // get second class name (candidate's id) and save as variable
   // display the corresponding candidate-info div
   // hide the rest of the candidate-info divs
+  //also, how to make it automatically display bio tab when clicked on?
 
 
 
