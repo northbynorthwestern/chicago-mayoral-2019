@@ -48,31 +48,31 @@
         <div class="candidate">
           <div class="candidate-photo"></div>
           <div class="candidate-name">{{ candidate.Candidate }}</div>
-          <button class="collapsible">Who?</button>
-            <div class="content">
+          <button class="collapsible" data-id="{{candidate.ID}}">Who?</button>
+            <div class="content {{candidate.ID}}">
 
                 <div class="tab">
-                   <button class="tablinks" data-id="bio">Bio</button>
-                    <button class="tablinks" data-id="issues">Issues</button>
-                    <button class="tablinks" data-id="endorsements">Endorsements</button>
-                    <button class="tablinks" data-id="chancesofwinning">Chances of Winning</button>
+                   <button class="tablinks" data-id="bio" data-can="{{candidate.ID}}">Bio</button>
+                    <button class="tablinks" data-id="issues" data-can="{{candidate.ID}}">Issues</button>
+                    <button class="tablinks" data-id="endorsements" data-can="{{candidate.ID}}">Endorsements</button>
+                    <button class="tablinks" data-id="chancesofwinning" data-can="{{candidate.ID}}">Chances of Winning</button>
                 </div>
 
-            <div class="candidate-info">  
+            <div class="candidate-info">
 
-                <div id="bio" class="tabcontent">
-  
+                <div id="bio {{candidate.ID}}" class="tabcontent">
+
                   <div class="candidate-bio">
-         
+
                   <p> {{ candidate.BioA }} </p>
                   <p> {{ candidate.BioB }} </p>
                   <p> {{ candidate.BioC }} </p>
-          
+
                   </div>
                 </div>
 
-              <div id="issues" class="tabcontent">                        
-                  
+              <div id="issues {{candidate.ID}}" class="tabcontent">
+
                 <div class="candidate-issues">
 
                   <p><b>{{ candidate.Issue1Title }}</b></p>
@@ -90,23 +90,23 @@
                 </div>
               </div>
 
-              <div id="endorsements" class="tabcontent">                        
-                  
+              <div id="endorsements {{candidate.ID}}" class="tabcontent">
+
                 <div class="candidate-endorsements">
 
                   <p><b>Major Endorsements</b></p>
                   <p>{{ candidate.Endorsements }}</p>
-             
+
                 </div>
               </div>
 
-              <div id="chancesofwinning" class="tabcontent">
+              <div id="chancesofwinning {{candidate.ID}}" class="tabcontent">
 
                 <div class="candidate-chancesofwinning">
 
                   <p><b>{{ candidate.ChancesofWinningTitle }}</b></p>
                   <p>{{ candidate.ChancesofWinningBlurb }}</p>
-             
+
                 </div>
               </div>
 

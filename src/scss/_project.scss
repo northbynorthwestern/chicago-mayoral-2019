@@ -48,6 +48,9 @@
   max-height: 0;
   transition: max-height 0.2s ease-out;
   text-align: left;
+  &.active {
+    display:block;
+  }
 }
 
 
@@ -85,13 +88,3 @@ tab button {
   border: 1px solid #ccc;
   border-top: none;
 }
-
-
-.candidate-info {
-&.active {
-display:block;
-}
-&.hidden {
-display: none;
-}
-} 
