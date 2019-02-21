@@ -10,6 +10,11 @@
   }
 }
 
+.candidate-info {
+  overflow: scroll;
+  max-height: 200px;
+}
+
 .candidate-photo {
   display: block;
   margin-left: auto;
@@ -237,7 +242,7 @@
     display:block;
   }
   &.bio {
-    display:block;
+    //display:block;
   }
 }
 
@@ -270,13 +275,13 @@ tab button {
 }
 
 /* Style the tab content */
-.tabcontent {
-  display: block;
-  height: 400px;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  border: none;
-  border-top: none;
-  overflow: scroll;
-
-}
+// .tabcontent {
+//   display: block;
+//   height: 400px;
+//   padding: 6px 12px;
+//   margin-bottom: 0;
+//   border: none;
+//   border-top: none;
+//   overflow: scroll;
+//
+// }

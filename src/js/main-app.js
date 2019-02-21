@@ -33,29 +33,19 @@ for (i = 0; i < coll.length; i++) {
     } else {
       $(currcan).addClass("active");
     }
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-    content.style.display = "none";
-    } else {
-    content.style.display = "block";
-    }
-    if (content.style.maxHeight){
-    content.style.maxHeight = null;
-    } else {
-    content.style.maxHeight = content.scrollHeight + "px";
-    }
+    //var content = this.nextElementSibling;
+    // if (content.style.display === "block") {
+    //   content.style.display = "none";
+    // } else {
+    //   content.style.display = "block";
+    // }
+    //  if (content.style.maxHeight){
+    //   content.style.maxHeight = null;
+    // } else {
+    //   content.style.maxHeight = content.scrollHeight + "px";
+    // }
   });
 }
-
-
-
-  // get second class name (candidate's id) and save as variable
-  // display the corresponding candidate-info div
-  // hide the rest of the candidate-info divs
-  //also, how to make it automatically display bio tab when clicked on?
-  
-  //mess with CSS
-
 
 
   $(".tablinks").click(function() {
