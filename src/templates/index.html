@@ -43,84 +43,90 @@
 
       <article class="container">
 
+        <div class="instructions"><i class="far fa-hand-point-right"></i> Click on a candidate to learn about their platform.</div>
+
         <div class="candidates-container">
         {% for candidate in DATA.Sheet1 %}
         <div class="candidate">
+          <div class="collapsible" data-id="{{candidate.ID}}">
           <div class="candidate-photo">
             <div class="candidate-img {{candidate.ID}}"> </div>
           </div>
           <div class="candidate-name"><h2>{{ candidate.Candidate }}</h2></div>
-          <button class="collapsible" data-id="{{candidate.ID}}">Who?</button>
-            <div class="content {{candidate.ID}}">
+          </div>
+          <!-- <button class="collapsible" data-id="{{candidate.ID}}">Who?</button> -->
+        </div>
 
-                <div class="tab">
-                   <button class="tablinks" data-id="bio" data-can="{{candidate.ID}}">Bio</button>
-                    <button class="tablinks" data-id="issues" data-can="{{candidate.ID}}">Issues</button>
-                    <button class="tablinks" data-id="endorsements" data-can="{{candidate.ID}}">Endorsements</button>
-                    <button class="tablinks" data-id="chancesofwinning" data-can="{{candidate.ID}}">Chances of Winning</button>
-                </div>
+        <div class="content {{candidate.ID}}">
+          <div class="close"><b>X</b></div>
 
-            <div class="candidate-info">
-
-
-                <div id="bio {{candidate.ID}}" class="tabcontent">
-
-                  <div class="candidate-bio">
-
-                  <p> {{ candidate.BioA }} </p>
-                  <p> {{ candidate.BioB }} </p>
-                  <p> {{ candidate.BioC }} </p>
-
-                  </div>
-                </div>
-
-              <div id="issues {{candidate.ID}}" class="tabcontent">
-
-                <div class="candidate-issues">
-
-                  <p><b>{{ candidate.Issue1Title }}</b></p>
-                  <p>{{ candidate.Issue1Blurb }}</p>
-
-                  <p><b>{{ candidate.Issue2Title }}</b></p>
-                  <p>{{ candidate.Issue2Blurb }}</p>
-
-                  <p><b>{{ candidate.Issue3Title }}</b></p>
-                  <p>{{ candidate.Issue3Blurb }}</p>
-
-                  <p><b>{{ candidate.Issue4Title }}</b></p>
-                  <p>{{ candidate.Issue4Blurb }}</p>
-
-                </div>
-              </div>
-
-              <div id="endorsements {{candidate.ID}}" class="tabcontent">
-
-                <div class="candidate-endorsements">
-
-                  <p><b>Major Endorsements</b></p>
-                  <p>{{ candidate.Endorsements }}</p>
-
-                </div>
-              </div>
-
-              <div id="chancesofwinning {{candidate.ID}}" class="tabcontent">
-
-                <div class="candidate-chancesofwinning">
-
-                  <p><b>{{ candidate.ChancesofWinningTitle }}</b></p>
-                  <p>{{ candidate.ChancesofWinningBlurb }}</p>
-
-                </div>
-              </div>
-
-
-            <p></p>
+            <div class="tab">
+               <button class="tablinks" data-id="bio" data-can="{{candidate.ID}}">Bio</button>
+                <button class="tablinks" data-id="issues" data-can="{{candidate.ID}}">Issues</button>
+                <button class="tablinks" data-id="endorsements" data-can="{{candidate.ID}}">Endorsements</button>
+                <button class="tablinks" data-id="chancesofwinning" data-can="{{candidate.ID}}">Chances of Winning</button>
             </div>
 
+        <div class="candidate-info">
 
 
+            <div id="bio {{candidate.ID}}" class="tabcontent">
+
+              <div class="candidate-bio">
+
+              <p> {{ candidate.BioA }} </p>
+              <p> {{ candidate.BioB }} </p>
+              <p> {{ candidate.BioC }} </p>
+
+              </div>
+            </div>
+
+          <div id="issues {{candidate.ID}}" class="tabcontent">
+
+            <div class="candidate-issues">
+
+              <p><b>{{ candidate.Issue1Title }}</b></p>
+              <p>{{ candidate.Issue1Blurb }}</p>
+
+              <p><b>{{ candidate.Issue2Title }}</b></p>
+              <p>{{ candidate.Issue2Blurb }}</p>
+
+              <p><b>{{ candidate.Issue3Title }}</b></p>
+              <p>{{ candidate.Issue3Blurb }}</p>
+
+              <p><b>{{ candidate.Issue4Title }}</b></p>
+              <p>{{ candidate.Issue4Blurb }}</p>
+
+            </div>
           </div>
+
+          <div id="endorsements {{candidate.ID}}" class="tabcontent">
+
+            <div class="candidate-endorsements">
+
+              <p><b>Major Endorsements</b></p>
+              <p>{{ candidate.Endorsements }}</p>
+
+            </div>
+          </div>
+
+          <div id="chancesofwinning {{candidate.ID}}" class="tabcontent">
+
+            <div class="candidate-chancesofwinning">
+
+              <p><b>{{ candidate.ChancesofWinningTitle }}</b></p>
+              <p>{{ candidate.ChancesofWinningBlurb }}</p>
+
+            </div>
+          </div>
+
+
+        <p></p>
         </div>
+
+
+
+      </div>
         {% endfor %}
         </div>
 

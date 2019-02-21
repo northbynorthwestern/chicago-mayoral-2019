@@ -15,6 +15,10 @@ window.$('.bt-icon--twitter').click((e) => {
 });
 
 
+// TODO
+// - add noscroll to document when .content is opened
+
+
 
 var coll = document.getElementsByClassName("collapsible");
 
@@ -33,20 +37,16 @@ for (i = 0; i < coll.length; i++) {
     } else {
       $(currcan).addClass("active");
     }
-    //var content = this.nextElementSibling;
-    // if (content.style.display === "block") {
-    //   content.style.display = "none";
-    // } else {
-    //   content.style.display = "block";
-    // }
-    //  if (content.style.maxHeight){
-    //   content.style.maxHeight = null;
-    // } else {
-    //   content.style.maxHeight = content.scrollHeight + "px";
-    // }
   });
 }
 
+$(".close").click(function(){
+  var bios = document.getElementsByClassName("content");
+  for (i=0; i < bios.length; i++){
+    $(bios[i]).removeClass("active");
+  }
+
+});
 
   $(".tablinks").click(function() {
     var i, tabcontent, tablinks;
