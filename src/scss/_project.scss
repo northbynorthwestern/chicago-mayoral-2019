@@ -4,6 +4,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-family: sans-serif;
   .candidate {
     display: inline-block;
     margin: 30px;
@@ -30,7 +31,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.daley {
   display: block;
@@ -43,7 +44,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.enyia {
   display: block;
@@ -56,7 +57,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.fioretti {
   display: block;
@@ -69,7 +70,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.ford {
   display: block;
@@ -82,7 +83,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.joyce {
   display: block;
@@ -95,7 +96,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.kozlar {
   display: block;
@@ -108,7 +109,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.lightfoot {
   display: block;
@@ -121,7 +122,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.mccarthy {
   display: block;
@@ -134,7 +135,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.mendoza {
   display: block;
@@ -147,7 +148,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.preckwinkle {
   display: block;
@@ -160,7 +161,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.salesgriffin {
   display: block;
@@ -173,7 +174,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.vallas {
   display: block;
@@ -186,7 +187,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
   &.wilson {
   display: block;
@@ -199,7 +200,7 @@
   background-position: center;
   background-size:auto 100%;
   background-repeat: no-repeat;
-  border: 2px solid blue;
+  border: 2px solid black;
   }
 
 }
@@ -213,10 +214,12 @@
   cursor: pointer;
   padding: 18px;
   width: 200px;
-  border: none;
+  border: 2px solid black;
   text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 .active, .collapsible:hover {
@@ -230,22 +233,25 @@
   overflow: visible;
   background-color: #f1f1f1;
   max-height: 800px;
-  border: 2px solid blue;
+  border: none;
   transition: max-height 0.2s ease-out;
   text-align: left;
+  font-family: sans-serif;
   &.active {
     display:block;
   }
-  &.bio {
-    display:block;
-  }
 }
-
 
 .tab {
   overflow: visible;
   border: none;
   background-color: #f1f1f1;
+  font-family: sans-serif;
+}
+
+.tablinks {
+  border: 1px solid black;
+  font-family: sans-serif;
 }
 
 tab button {
@@ -257,16 +263,17 @@ tab button {
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
+  font-family: sans-serif;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ADF2FA;
+  background-color: #C8F7FE;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ADF2FA;
+  background-color: #f1f1f1;
 }
 
 /* Style the tab content */
@@ -278,5 +285,10 @@ tab button {
   border: none;
   border-top: none;
   overflow: scroll;
+  font-family: sans-serif;
+}
 
+.candidate-info {
+  font-family: sans-serif;
+  font-size: 15px;
 }
